@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojos Page</title>
+</head>
+<body>
+    <fieldset class="container">
+        <legend>
+            Create a new dojo
+        </legend>
+            <div class="errorMessage">
+                <c:out value="${loginErrorMessage}"></c:out>
+            </div>
+                <div class = "row">
+                    <label for="name"> Name: </label>
+                    <input type="text" id="name" name="name" />
+                </div>
+                <div class = "row">
+                    <label for="location"> Location: </label>
+                    <input type="text" id="lastName" name="location" />
+                </div>
+                <div class = "row">
+                    <label for="accountType"> Account Type: </label>
+                    <select id="accountType" name="accountType">
+                    <option value="0">
+                        Please select a country
+                    </option>
+                    <option value="mexico">
+                        Mexico
+                    </option>
+                    <option value="costarica">
+                        Costa Rica
+                    </option>
+                    <option value="ecuador">
+                        Ecuador
+                    </option>
+                </select>
+                </div>
+    
+    </fieldset>
+</body>
+</html>
